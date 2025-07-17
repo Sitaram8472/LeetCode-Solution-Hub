@@ -1,3 +1,5 @@
+import java.lang.classfile.components.ClassPrinter.ListNode;
+import java.util.*;
 class Solution {
     public ListNode middleNode(ListNode head) {
         ListNode slow = head;
