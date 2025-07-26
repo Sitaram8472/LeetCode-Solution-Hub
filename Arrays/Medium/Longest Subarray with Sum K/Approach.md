@@ -20,7 +20,7 @@ So, here’s what I did:
 
 ---
 
-## 💡 Intuition (Like Reverse Engineering):
+## 💡 Intuition (Reverse Engineering):
 
 This approach works like **reverse engineering the sum**.
 
@@ -50,4 +50,15 @@ Index 3: sum = 7 → 7 - 5 = 2 → not found
 Index 4: sum = 8 → 8 - 5 = 3 → found at index 1 → subarray (3, 1, 1) → length = 3
 ...
 
-Final Answer = 3
+Final Answer = 3.
+```
+---
+
+## ⏱ Time & Space Complexity: Dry Run Example:
+
+- **Time Complexity:** `O(n)`  
+  We iterate through the array once, and all operations with the HashMap (`get`, `put`, `containsKey`) are constant time.
+
+check this md file correct or not
+- **Space Complexity:** `O(n)`  
+  In the worst case, we may store up to `n` unique prefix sums in the HashMap.
